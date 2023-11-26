@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="_05LabExer1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:_05LabExer1.Pages"
+    FlyoutBehavior="Flyout"
+    Shell.TabBarIsVisible="False">
+
+    <FlyoutItem FlyoutDisplayOptions ="AsMultipleItems">
+        <ShellContent Title="Sentinels" Icon="sen_logo.png" ContentTemplate="{DataTemplate local:SEN}"/>
+        <ShellContent Title="TSM" Icon="tsm_logo.png" ContentTemplate="{DataTemplate local:TSM}"/>
+        <ShellContent Title="T1" Icon="t1logo.png" ContentTemplate="{DataTemplate local:T1}"/>
+    </FlyoutItem>
+
+</Shell>
